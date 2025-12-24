@@ -1,0 +1,190 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+header{
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    background-color: rgb(7, 35, 88);
+    color: white;
+    display: flex;
+    padding-right: 30px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}       
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    justify-content:space-between;
+    margin-left: 80px;
+}
+ nav a:hover {
+      background-color: white;
+      color: black;
+      border-radius: 4px;
+    }
+.head{
+    display: flex;
+    margin-left: 30px ;
+}
+#name{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+body{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: linear-gradient(to bottom, rgba(170, 197, 234, 0.993), #ffffff);
+}
+.card{
+    height: 500px;
+    width: 580px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.img-div img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin-top: 70px;
+}
+.img-div{
+    height: 300px;
+    border-radius: 15px; 
+
+}
+.card p{
+    font-size: 20px;
+}
+.card h2{
+    color: rgb(7, 35, 88);
+}
+
+.container{
+    height: 600px;
+    width: 1200px;
+    border-radius:15px;
+    margin-top: 70px;
+    margin-left: 500px;
+    margin-bottom: 70px;
+    display: flex;
+    background-color: azure;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.container:hover{
+    transform: scale(1.03);
+}   
+.information h2{
+    color: rgb(7, 35, 88);
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    font-size: 50px;
+} 
+.information ul{
+    font-size:20px;
+    line-height: 40px;
+}
+.information{
+    margin-left:80px;
+    margin-top: 80px;  
+}
+.information :hover{
+    transform: scale(1.05);
+    background-color: white;
+}
+footer{
+    background-color: rgb(7, 35, 88);
+    color: white;
+    height: 120px;
+    align-items: center;
+    padding-top: 40px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+
+    body{
+        margin-top: 40px;
+        /* height: 40px; */
+    }
+    
+    header {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+    }
+
+    #logo img {
+        height: 70px;
+    }
+
+    #name h1 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 0;
+    }
+
+    nav {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+   
+    .container {
+        flex-direction: column;
+        width: 95%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .img-div img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .information {
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .information h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        position: relative;
+        height: auto;
+        padding: 20px;
+        font-size: 14px;
+    }
+}
