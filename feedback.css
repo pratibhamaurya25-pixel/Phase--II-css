@@ -1,0 +1,210 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+header{
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    background-color: rgb(7, 35, 88);
+    color: white;
+    display: flex;
+    padding-right: 30px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}       
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    justify-content:space-between;
+    margin-left: 80px;
+}
+ nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+.head{
+    display: flex;
+    margin-left: 30px ;
+}
+#name{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+body{
+  padding-top: 120px;
+  background: linear-gradient(to bottom, rgba(170, 197, 234, 0.993), #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:870px;
+}
+
+.card-container {
+  background-color: azure;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: 1000px;
+  height: 650px;
+  text-align: left;
+  border-top: 20px solid rgb(7, 35, 88);
+}
+.card-container:hover{
+    transform: scale(1.04);
+}
+.feedback-container h2 {
+  text-align: center;
+  color: rgb(7, 35, 88);
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: none;
+}
+.rate-div{
+    display: flex;
+}
+.rating{
+    margin-top:10px;
+}
+.radio-group{
+    margin-left: 100px;
+}
+.checkbox {
+  margin: 10px;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  background-color: rgb(7, 35, 88);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(7, 35, 88);
+  transform: scale(1.05);
+}
+
+footer{
+    background-color: rgb(7, 35, 88);
+    color: white;
+    height: 120px;
+    align-items: center;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 308px;
+    font-size: large;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+@media (max-width: 768px){
+
+    header {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+    }
+
+    #logo img {
+        height: 70px;
+    }
+
+    #name h1 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 0;
+    }
+
+    nav {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    body{
+        margin-top: 30px;
+        height: auto;
+    }
+   
+  .card-container {
+    width: 95%;
+    padding: 20px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 180px;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .rate-div {
+    flex-direction: column;
+  }
+
+  .checkbox {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding-top: 30px;
+    height: 90px;
+  }
+}
+
+  
