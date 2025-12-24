@@ -1,0 +1,72 @@
+.container{
+    height: 970px;
+    width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(237, 234, 219);
+    margin-left: 580px;
+}
+.img-div img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.img-div{
+    border-radius: 50%;
+    border: 3px solid black;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+   
+.profile{
+    display: flex;
+    padding-left: 30px;
+}
+
+.details-div ul{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.details-div h1{
+    text-align: center;
+    font-size: 50px; 
+}
+.details-div h2{
+    text-align: center;
+}
+.profile-summary{
+    padding-top: 20px;
+    margin-left:60px;
+    width: 90%;
+}
+.profile-summary p{
+    font-size: 20px;
+}
+.heading{
+    background-color: rgb(215, 201, 176);
+    border: 3px solid black;
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.list{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.list ul{
+    font-size: 20px;
+}
+.skillsachievements-div{
+    display: flex;
+}
+.skills{
+    margin-left: 180px;
+}
+
+
+
+
+
