@@ -1,0 +1,225 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+header{
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    background-color: rgb(7, 35, 88);
+    color: white;
+    display: flex;
+    padding-right: 30px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}       
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    justify-content:space-between;
+    margin-left: 80px;
+}
+ nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+.head{
+    display: flex;
+    margin-left: 30px ;
+}
+#name{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+body{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: linear-gradient(to bottom, rgba(170, 197, 234, 0.993), #ffffff); 
+}
+.container{
+    height:650px;
+    width: 1400px;
+    background-color: azure;
+    border-radius: 15px;
+    border-top:20px solid rgb(7, 35, 88);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin-top: 50px;
+    margin-left: 380px;
+}
+.container p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.form-container{
+    margin-left: 80px;
+}
+.name-fields {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 10px;
+  resize: none;
+}
+.img-div img{
+    height: 550px;
+    width: 600px;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+.content-div{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.Content{
+    display: flex;
+
+}
+.contact{
+    margin-top: 50px;
+    margin-left: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact h2 {
+    text-decoration: underline;
+    margin-top: 20px;
+    line-height: 60px;
+}
+button {
+  width: 90%;
+  background-color: rgb(7, 35, 88);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: rgb(7, 35, 88);
+  transform: scale(1.05);
+}
+footer{
+    background-color: rgb(7, 35, 88);
+    color: white;
+    height: 120px;
+    align-items: center;
+    padding-top: 40px;
+    text-align: center;
+    margin-top: 100px; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer a:hover{
+    transform: scale(1.1);
+    color: black;
+    background-color:white;
+}
+@media (max-width: 768px){
+
+    header {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+    }
+
+    #logo img {
+        height: 70px;
+    }
+
+    #name h1 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 0;
+    }
+
+    nav {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    body{
+        margin-top: 30px;
+    }
+
+  .container {
+    width: 95%;
+    height: auto;
+    margin-left: 15px;
+  }
+
+  .Content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-div img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .form-container {
+    width: 80%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .name-fields {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 100% !important;
+  }
+
+  .contact {
+    margin: 30px 0;
+    font-size: 16px;
+  }
+
+  footer {
+    position: relative;
+    height: auto;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
